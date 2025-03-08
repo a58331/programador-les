@@ -1,0 +1,80 @@
+/* Reseta os estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.form-container {
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#nifPesquisa {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-pesquisar {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-pesquisar:hover {
+    background-color: #0056b3;
+}
+
+#tabelaPacientes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#tabelaPacientes th, 
+#tabelaPacientes td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+#tabelaPacientes th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.selecionar {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.selecionar:hover {
+    background-color: #218838;
+}

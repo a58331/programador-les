@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  
+    background-image: url('../imagem/natureza_1.jpg'); /* Adiciona a imagem como fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do body */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Largura máxima para o formulário */
+    margin: 50px auto;
+    display: grid; /* Mudando para grid */
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas de igual largura */
+    gap: 20px; /* Espaço entre os campos */
+}
+
+/* Estilo específico para o formulário de funcionário */
+.form-funcionario {
+    background-color: #fff; /* Cor de fundo específica */
+}
+
+.form-funcionario h2 {
+    color: #2e3232; /* Cor do título */
+    grid-column: span 2; /* Faz o título ocupar as duas colunas */
+    text-align: center;
+}
+
+.form-funcionario .form-group {
+    margin-bottom: 0; /* Remover a margem inferior para melhor alinhamento */
+}
+
+.form-funcionario .form-group label {
+    font-weight: bold;
+    color: #0e0e0e; /* Cor diferente para os rótulos */
+}
+
+.form-funcionario .form-group input,
+.form-funcionario .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #004d40; /* Borda diferente para os campos */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-funcionario .form-group input:focus,
+.form-funcionario .form-group select:focus {
+    border-color: #8B008B; /* Cor da borda ao focar */
+}
+
+/* Estilos dos botões */
+.btn-submit {
+    background-color: #8B008B;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 48%; /* Botão ocupa 48% da largura do contêiner */
+}
+
+.btn-cancel {
+    background-color: #FF6347; /* Cor de destaque para o botão cancelar */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 48%; /* Botão ocupa 48% da largura do contêiner */
+}
+
+/* Estilo para os botões ao passar o mouse */
+.btn-submit:hover {
+    background-color: #5F9EA0;
+}
+
+.btn-cancel:hover {
+    background-color: #FF4500; /* Cor diferente ao passar o mouse */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Espaça igualmente os botões */
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 20px; /* Margem superior para separar dos campos */
+    grid-column: span 2; /* Faz os botões ocuparem as duas colunas */
+}
+
+/* Adicione media queries se necessário para responsividade */
+@media (max-width: 600px) {
+    .form-container {
+        grid-template-columns: 1fr; /* Uma coluna para telas pequenas */
+        padding: 15px;
+    }
+    
+    .button-group {
+        flex-direction: column; /* Para telas pequenas, os botões ficam em coluna */
+    }
+}
+.form-container {
+    max-width: 800px;
+    margin: 40px auto; /* Adiciona 40px de espaço no topo e no fundo */
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.form-container h2{
+    text-align: center;
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box; /* Certifica que padding e border são incluídos no tamanho total */
+}
+
+.form-group-full {
+    grid-column: 1 / 3; /* Ocupa ambas as colunas */
+}
+
+.button-group {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-submit, .btn-cancel {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-submit {
+    background-color: #8B008B;
+    color: white;
+}
+
+.btn-cancel {
+    background-color: #f44336;
+    color: white;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+.success-message p {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+}

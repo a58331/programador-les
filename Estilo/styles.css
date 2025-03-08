@@ -1,0 +1,350 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  
+    background-image: url('../imagem/natureza_1.jpg'); /* Adiciona a imagem como fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do body */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+
+    
+}
+
+header {
+    background-color: #191970;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 20px 0 10px; /* Adiciona margem superior de 20px e inferior de 10px */
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Usando flexbox */
+    justify-content: center; /* Centraliza os itens no menu */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se não houver espaço */
+}
+
+.menu li {
+    margin-right: 10px; /* Margem entre os itens */
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px; /* Ajuste de padding */
+    background-color: #5F9EA0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 14px; /* Ajuste de tamanho de fonte */
+}
+
+.menu li a:hover {
+    background-color: #8B008B;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #191970;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.content {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 900px;
+
+}
+.content h2 {
+    color: 	whitesmoke; /* Cor do texto do h2 */
+    font-size: 28px;
+}
+
+.content p {
+    color: 	whitesmoke; /* Cor do texto do parágrafo */
+    font-size: 24px;
+}
+
+
+@media (max-width: 600px) {
+    .menu li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+.imagem-medico {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    float: left; /* Permite que a imagem fique à esquerda do texto */
+    margin-right: 20px; /* Espaçamento à direita da imagem */
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+}
+
+/*Aqui começa formatação de formulario de usuario*/
+/* Estilo do contêiner do formulário */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Ajustado para formulários maiores */
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Título centralizado */
+.form-container h2 {
+    text-align: center;
+    color: #8B008B;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os grupos de campos */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo das labels */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilo dos inputs e selects */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Foco nos campos de formulário */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #8B008B;
+    outline: none;
+}
+
+/* Estilo especial para textarea (campo de orientações, por exemplo) */
+.form-group textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+    min-height: 100px; /* Altura mínima */
+}
+
+/* Contêiner para campos de senha e ícone de visibilidade */
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Botões de ação (Enviar e Cancelar) */
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Espaça igualmente os botões */
+    gap: 10px; /* Espaço entre os botões */
+}
+
+.btn-submit {
+    background-color: #8B008B;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Expande para ocupar espaço igual */
+    font-size: 16px;
+    flex: 1; /* Permite que o botão ocupe todo o espaço disponível */
+}
+
+.btn-submit:hover {
+    background-color: #5F9EA0;
+}
+
+.btn-cancel {
+    background-color: #FF6347;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    flex: 1;
+}
+
+.btn-cancel:hover {
+    background-color: #FF4500;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .button-group {
+        flex-direction: column; /* Para telas pequenas, os botões ficam em coluna */
+    }
+}
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box; /* Certifica que padding e border são incluídos no tamanho total */
+}
+.signup-link {
+    text-decoration: none;  /* Remove o sublinhado */
+    color: #4CAF50;         /* Cor verde */
+    font-size: 14px;        /* Tamanho da fonte */
+    margin-top: 10px;       /* Espaçamento superior */
+    margin-bottom: 30px;    /* Espaçamento inferior aumentado para distanciar do botão */
+    display: block;         /* Faz com que o link ocupe uma linha inteira */
+    text-align: center;     /* Centraliza o texto */
+}
+
+.signup-link:hover {
+    color: #388E3C;         /* Cor um pouco mais escura ao passar o mouse */
+    text-decoration: underline;  /* Adiciona sublinhado ao passar o mouse */
+}
+
+
+
+/*Aqui está formatação de formulário de prescrição*/
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+    
+}
+
+/* Cabeçalho do formulário */
+h2 {
+    text-align: center;
+    color: #8B008B;
+    margin-bottom: 20px;
+}
+
+/* Estilos dos grupos de campos */
+div {
+    margin-bottom: 15px;
+}
+
+/* Estilos dos rótulos */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Estilos dos campos de entrada */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Estilos do textarea */
+textarea {
+    height: 80px;
+    resize: none; /* Impede o redimensionamento do textarea */
+}
+
+/* Estilos ao focar nos campos de entrada */
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #8B008B;
+    outline: none;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #8B008B;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Estilo do botão ao passar o mouse */
+button:hover {
+    background-color: #5F9EA0;
+}
+
+/* Alinhar o botão no centro */
+button {
+    display: block;
+    margin: 0 auto;
+}
+
+.add-medicamento-btn{
+    margin-bottom: 20px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espaçamento entre os campos */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input.busca,
+select#ID_funcionario {
+    width: 100%; /* Para que ocupem toda a largura disponível */
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
